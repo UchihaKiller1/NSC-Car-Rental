@@ -53,6 +53,12 @@ phone : {
     required : true
 
     
+},
+isVerified : {
+
+    type: Boolean,
+    default : false
+    
 }
 
 

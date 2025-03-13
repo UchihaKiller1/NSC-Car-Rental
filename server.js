@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import userRouter from "./routes/userRoute.js";
+import reservationRouter from "./routes/resRoute.js";
 
 
 const app = express();
@@ -13,15 +14,16 @@ let mongoURL = "mongodb+srv://NSC:NSCcarrentals123@cluster0.gxsoc.mongodb.net/NS
 mongoose.connect(mongoURL);
 let connection = mongoose.connection;
 connection.once("open", ()=>{
+    
 
     console.log("MongoDB connection established successfully!")
 })
 
 app.use(bodyParser.json());
 
-app.listen(3000, ()=>{
+app.listen(4000, ()=>{
 
-    console.log('listening on port 3000')
+    console.log('listening on Port 40000')
 
 });
 
