@@ -2,7 +2,6 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import userRouter from "./routes/userRoute.js";
-import reservationRouter from "./routes/resRoute.js";
 
 
 const app = express();
@@ -23,7 +22,7 @@ app.use(bodyParser.json());
 
 app.listen(4000, ()=>{
 
-    console.log('listening on Port 40000')
+    console.log('listening on Port 4000')
 
 });
 
