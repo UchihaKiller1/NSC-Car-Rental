@@ -8,6 +8,7 @@ export function registerUser ( req, res){
 
        data.password = bcrypt.hashSync(data.password,10)
       
+       console.log("asvvb sb d")
       
        const newUser = new User(data)
        newUser.save().then(()=>{
